@@ -56,6 +56,16 @@ import { InputOutputComponent } from './components/component-directive/input-out
 import { InTheMetadataComponent } from './components/component-directive/in-the-metadata/in-the-metadata.component';
 import { AliasingComponent } from './components/component-directive/aliasing/aliasing.component';
 
+// content-projection
+import {
+  ZippyComponent,
+  ZippyContentDirective,
+  ZippyToggleDirective,
+} from './app.component';
+import { ZippyBasicComponent } from './components/content-projection/zippy-basic/zippy-basic.component';
+import { ZippyMultislotComponent } from './components/content-projection/zippy-multislot/zippy-multislot.component';
+import { ZippyNgprojectasComponent } from './components/content-projection/zippy-ngprojectas/zippy-ngprojectas.component';
+
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
@@ -104,6 +114,13 @@ import { AliasingComponent } from './components/component-directive/aliasing/ali
     InputOutputComponent,
     InTheMetadataComponent,
     AliasingComponent,
+    // content-projection
+    ZippyComponent,
+    ZippyToggleDirective,
+    ZippyContentDirective,
+    ZippyBasicComponent,
+    ZippyMultislotComponent,
+    ZippyNgprojectasComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
