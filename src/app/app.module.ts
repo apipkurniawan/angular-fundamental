@@ -49,6 +49,13 @@ import { HeroControlsComponent } from './components/component-style/hero-control
 import { QuestSummaryComponent } from './components/component-style/quest-summary/quest-summary.component';
 import { HeroTeamComponent } from './components/component-style/hero-team/hero-team.component';
 
+// component-directive
+import { ItemDetailComponent } from './components/component-directive/item-detail/item-detail.component';
+import { ItemOutputComponent } from './components/component-directive/item-output/item-output.component';
+import { InputOutputComponent } from './components/component-directive/input-output/input-output.component';
+import { InTheMetadataComponent } from './components/component-directive/in-the-metadata/in-the-metadata.component';
+import { AliasingComponent } from './components/component-directive/aliasing/aliasing.component';
+
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
@@ -91,6 +98,12 @@ import { HeroTeamComponent } from './components/component-style/hero-team/hero-t
     HeroControlsComponent,
     QuestSummaryComponent,
     HeroTeamComponent,
+    // component-directive
+    ItemDetailComponent,
+    ItemOutputComponent,
+    InputOutputComponent,
+    InTheMetadataComponent,
+    AliasingComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
