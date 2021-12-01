@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 
-// component-lifecycle
+/* component-lifecycle */
 import { AfterContentParentComponent } from './components/component-lifecycle/after-content/after-content-parent.component';
 import { AfterContentComponent } from './components/component-lifecycle/after-content/after-content.component';
 import { ChildComponent } from './components/component-lifecycle/child/child.component';
@@ -24,7 +24,7 @@ import { PeekABooComponent } from './components/component-lifecycle/peek-a-boo/p
 import { SpyParentComponent } from './components/component-lifecycle/spy/spy.component';
 import { SpyDirective } from './directives/spy.directive';
 
-// component-interaction
+/* component-interaction */
 import { AstronautComponent } from './components/component-interaction/mission-control/astronaut.component';
 import {
   CountdownLocalVarParentComponent,
@@ -41,7 +41,7 @@ import { VersionParentComponent } from './components/component-interaction/versi
 import { VoterComponent } from './components/component-interaction/votetaker/voter.component';
 import { VoteTakerComponent } from './components/component-interaction/votetaker/votetaker.component';
 
-// component-style
+/* component-style */
 import { HeroAppComponent } from './components/component-style/hero-app/hero-app.component';
 import { HeroAppMainComponent } from './components/component-style/hero-app/hero-app-main.component';
 import { HeroDetailsComponent } from './components/component-style/hero-details/hero-details.component';
@@ -49,28 +49,35 @@ import { HeroControlsComponent } from './components/component-style/hero-control
 import { QuestSummaryComponent } from './components/component-style/quest-summary/quest-summary.component';
 import { HeroTeamComponent } from './components/component-style/hero-team/hero-team.component';
 
-// component-directive
+/* component-directive */
 import { ItemDetailComponent } from './components/component-directive/item-detail/item-detail.component';
 import { ItemOutputComponent } from './components/component-directive/item-output/item-output.component';
 import { InputOutputComponent } from './components/component-directive/input-output/input-output.component';
 import { InTheMetadataComponent } from './components/component-directive/in-the-metadata/in-the-metadata.component';
 import { AliasingComponent } from './components/component-directive/aliasing/aliasing.component';
 
-// content-projection
-import {
-  ZippyComponent,
-  ZippyContentDirective,
-  ZippyToggleDirective,
-} from './app.component';
+/* content-projection */
+// import {
+//   ZippyComponent,
+//   ZippyContentDirective,
+//   ZippyToggleDirective,
+// } from './app.component';
 import { ZippyBasicComponent } from './components/content-projection/zippy-basic/zippy-basic.component';
 import { ZippyMultislotComponent } from './components/content-projection/zippy-multislot/zippy-multislot.component';
 import { ZippyNgprojectasComponent } from './components/content-projection/zippy-ngprojectas/zippy-ngprojectas.component';
+
+/* dynamic-component */
+import { HeroJobAdComponent } from './components/dynamic-component/hero-job-ad/hero-job-ad.component';
+import { AdBannerComponent } from './components/dynamic-component/ad-banner/ad-banner.component';
+import { HeroProfileComponent } from './components/dynamic-component/hero-profile/hero-profile.component';
+import { AdService } from './services/ad.service';
+import { AdDirective } from './directives/ad.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
-    // component-lifecycle
+    /* component-lifecycle */
     AfterContentParentComponent,
     AfterContentComponent,
     ChildComponent,
@@ -87,7 +94,7 @@ import { ZippyNgprojectasComponent } from './components/content-projection/zippy
     PeekABooComponent,
     SpyParentComponent,
     SpyDirective,
-    // component-interaction
+    /* component-interaction */
     AstronautComponent,
     CountdownTimerComponent,
     CountdownViewChildParentComponent,
@@ -101,28 +108,34 @@ import { ZippyNgprojectasComponent } from './components/content-projection/zippy
     VersionParentComponent,
     VoteTakerComponent,
     VoterComponent,
-    // component-style
+    /* component-style */
     HeroAppComponent,
     HeroAppMainComponent,
     HeroDetailsComponent,
     HeroControlsComponent,
     QuestSummaryComponent,
     HeroTeamComponent,
-    // component-directive
+    /* component-directive */
     ItemDetailComponent,
     ItemOutputComponent,
     InputOutputComponent,
     InTheMetadataComponent,
     AliasingComponent,
-    // content-projection
-    ZippyComponent,
-    ZippyToggleDirective,
-    ZippyContentDirective,
+    /* content-projection */
+    // ZippyComponent,
+    // ZippyToggleDirective,
+    // ZippyContentDirective,
     ZippyBasicComponent,
     ZippyMultislotComponent,
     ZippyNgprojectasComponent,
+    /* dynamic-component */
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdBannerComponent,
+    AdDirective,
   ],
-  providers: [],
+  entryComponents: [HeroJobAdComponent, HeroProfileComponent],
+  providers: [AdService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
