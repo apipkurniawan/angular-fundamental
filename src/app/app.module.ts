@@ -72,6 +72,7 @@ import { AdBannerComponent } from './components/dynamic-component/ad-banner/ad-b
 import { HeroProfileComponent } from './components/dynamic-component/hero-profile/hero-profile.component';
 import { AdService } from './services/ad.service';
 import { AdDirective } from './directives/ad.directive';
+import { PopupService } from './services/popup.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -135,7 +136,7 @@ import { AdDirective } from './directives/ad.directive';
     AdDirective,
   ],
   entryComponents: [HeroJobAdComponent, HeroProfileComponent],
-  providers: [AdService],
+  providers: [AdService, PopupService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

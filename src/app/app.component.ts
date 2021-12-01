@@ -6,10 +6,14 @@ import {
   ContentChild,
   HostBinding,
   HostListener,
+  Injector,
 } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
 
 import { AdItem } from './models/ad-item';
 import { AdService } from './services/ad.service';
+import { PopupService } from '../app/services/popup.service';
+import { PopupComponent } from '../app/components/angular-elements/popup.component';
 
 @Component({
   selector: 'app-root',
@@ -20,14 +24,25 @@ export class AppComponent {
   title = 'latihan angular';
 
   /* ----------------------------------------------------- */
-  /* DYNAMIC-COMPONENT */
-  ads: AdItem[] = [];
-
-  constructor(private adService: AdService) {}
-
-  ngOnInit() {
-    this.ads = this.adService.getAds();
+  /* ANGULAR-ELEMENTS */
+  constructor(injector: Injector, public popup: PopupService) {
+    // Convert `PopupComponent` to a custom element.
+    const PopupElement = createCustomElement(PopupComponent, { injector });
+    // Register the custom element with the browser.
+    customElements.define('popup-element', PopupElement);
   }
+  /* ANGULAR-ELEMENTS */
+  /* ----------------------------------------------------- */
+
+  /* ----------------------------------------------------- */
+  /* DYNAMIC-COMPONENT */
+  // ads: AdItem[] = [];
+
+  // constructor(private adService: AdService) {}
+
+  // ngOnInit() {
+  //   this.ads = this.adService.getAds();
+  // }
   /* DYNAMIC-COMPONENT */
   /* ----------------------------------------------------- */
 
