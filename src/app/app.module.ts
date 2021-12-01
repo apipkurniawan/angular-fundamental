@@ -83,6 +83,18 @@ import { AdDirective } from './directives/ad.directive';
 import { PopupService } from './services/popup.service';
 /* ANGULAR-ELEMENTS */
 
+/* TEMPLATE */
+import {
+  BigHeroDetailComponent,
+  HeroDetailComponent,
+} from './template/hero/hero-detail.component';
+import { ClickDirective, ClickDirective2 } from './directives/click.directive';
+import { HeroFormComponent } from './template/hero/hero-form.component';
+import { heroSwitchComponents } from './template/hero/hero-switch.components';
+import { SizerComponent } from './template/sizer/sizer.component';
+import { SvgComponent } from './template/svg/svg.component';
+/* TEMPLATE */
+
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
@@ -143,6 +155,15 @@ import { PopupService } from './services/popup.service';
     HeroProfileComponent,
     AdBannerComponent,
     AdDirective,
+    /* TEMPLATE */
+    BigHeroDetailComponent,
+    HeroDetailComponent,
+    HeroFormComponent,
+    heroSwitchComponents,
+    ClickDirective,
+    ClickDirective2,
+    SizerComponent,
+    SvgComponent,
   ],
   entryComponents: [HeroJobAdComponent, HeroProfileComponent],
   providers: [AdService, PopupService],
