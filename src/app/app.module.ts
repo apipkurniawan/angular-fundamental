@@ -95,6 +95,26 @@ import { SizerComponent } from './template/sizer/sizer.component';
 import { SvgComponent } from './template/svg/svg.component';
 /* TEMPLATE */
 
+/* PIPES */
+import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
+import { FetchJsonPipe } from './pipes/fetch-json.pipe';
+import {
+  FlyingHeroesComponent,
+  FlyingHeroesImpureComponent,
+} from './template/pipes/flying-heroes/flying-heroes.component';
+import {
+  FlyingHeroesImpurePipe,
+  FlyingHeroesPipe,
+} from './pipes/flying-heroes.pipe';
+import { HeroAsyncMessageComponent } from './template/pipes/hero-message/hero-async-message.component';
+import { HeroBirthdayComponent } from './template/pipes/hero-birthday/hero-birthday1.component';
+import { HeroBirthday2Component } from './template/pipes/hero-birthday/hero-birthday2.component';
+import { HeroListComponent } from './template/pipes/hero-list/hero-list.component';
+import { PowerBoostCalculatorComponent } from './template/pipes/power-boost-calculator/power-boost-calculator.component';
+import { PowerBoosterComponent } from './template/pipes/power-booster/power-booster.component';
+import { PrecedenceComponent } from './template/pipes/precedence/precedence.component';
+/* PIPES */
+
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
@@ -164,6 +184,20 @@ import { SvgComponent } from './template/svg/svg.component';
     ClickDirective2,
     SizerComponent,
     SvgComponent,
+    /* PIPES */
+    FlyingHeroesComponent,
+    FlyingHeroesImpureComponent,
+    HeroAsyncMessageComponent,
+    HeroBirthdayComponent,
+    HeroBirthday2Component,
+    HeroListComponent,
+    PowerBoosterComponent,
+    PowerBoostCalculatorComponent,
+    FlyingHeroesPipe,
+    FlyingHeroesImpurePipe,
+    FetchJsonPipe,
+    ExponentialStrengthPipe,
+    PrecedenceComponent,
   ],
   entryComponents: [HeroJobAdComponent, HeroProfileComponent],
   providers: [AdService, PopupService],
