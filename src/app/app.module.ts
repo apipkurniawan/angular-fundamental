@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 
-/* component-lifecycle */
+/* COMPONENT-LIFECYCLE */
 import { AfterContentParentComponent } from './components/component-lifecycle/after-content/after-content-parent.component';
 import { AfterContentComponent } from './components/component-lifecycle/after-content/after-content.component';
 import { ChildComponent } from './components/component-lifecycle/child/child.component';
@@ -23,8 +23,9 @@ import { PeekABooParentComponent } from './components/component-lifecycle/peek-a
 import { PeekABooComponent } from './components/component-lifecycle/peek-a-boo/peek-a-boo.component';
 import { SpyParentComponent } from './components/component-lifecycle/spy/spy.component';
 import { SpyDirective } from './directives/spy.directive';
+/* COMPONENT-LIFECYCLE */
 
-/* component-interaction */
+/* COMPONENT-INTERACTION */
 import { AstronautComponent } from './components/component-interaction/mission-control/astronaut.component';
 import {
   CountdownLocalVarParentComponent,
@@ -40,23 +41,26 @@ import { VersionChildComponent } from './components/component-interaction/versio
 import { VersionParentComponent } from './components/component-interaction/version/version-parent.component';
 import { VoterComponent } from './components/component-interaction/votetaker/voter.component';
 import { VoteTakerComponent } from './components/component-interaction/votetaker/votetaker.component';
+/* COMPONENT-INTERACTION */
 
-/* component-style */
+/* COMPONENT-STYLE */
 import { HeroAppComponent } from './components/component-style/hero-app/hero-app.component';
 import { HeroAppMainComponent } from './components/component-style/hero-app/hero-app-main.component';
 import { HeroDetailsComponent } from './components/component-style/hero-details/hero-details.component';
 import { HeroControlsComponent } from './components/component-style/hero-controls/hero-controls.component';
 import { QuestSummaryComponent } from './components/component-style/quest-summary/quest-summary.component';
 import { HeroTeamComponent } from './components/component-style/hero-team/hero-team.component';
+/* COMPONENT-STYLE */
 
-/* component-directive */
+/* COMPONENT-DIRECTIVE */
 import { ItemDetailComponent } from './components/component-directive/item-detail/item-detail.component';
 import { ItemOutputComponent } from './components/component-directive/item-output/item-output.component';
 import { InputOutputComponent } from './components/component-directive/input-output/input-output.component';
 import { InTheMetadataComponent } from './components/component-directive/in-the-metadata/in-the-metadata.component';
 import { AliasingComponent } from './components/component-directive/aliasing/aliasing.component';
+/* COMPONENT-DIRECTIVE */
 
-/* content-projection */
+/* CONTENT-PROJECTION */
 // import {
 //   ZippyComponent,
 //   ZippyContentDirective,
@@ -65,20 +69,25 @@ import { AliasingComponent } from './components/component-directive/aliasing/ali
 import { ZippyBasicComponent } from './components/content-projection/zippy-basic/zippy-basic.component';
 import { ZippyMultislotComponent } from './components/content-projection/zippy-multislot/zippy-multislot.component';
 import { ZippyNgprojectasComponent } from './components/content-projection/zippy-ngprojectas/zippy-ngprojectas.component';
+/* CONTENT-PROJECTION */
 
-/* dynamic-component */
+/* DYNAMIC-COMPONENT */
 import { HeroJobAdComponent } from './components/dynamic-component/hero-job-ad/hero-job-ad.component';
 import { AdBannerComponent } from './components/dynamic-component/ad-banner/ad-banner.component';
 import { HeroProfileComponent } from './components/dynamic-component/hero-profile/hero-profile.component';
 import { AdService } from './services/ad.service';
 import { AdDirective } from './directives/ad.directive';
+/* DYNAMIC-COMPONENT */
+
+/* ANGULAR-ELEMENTS */
 import { PopupService } from './services/popup.service';
+/* ANGULAR-ELEMENTS */
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
-    /* component-lifecycle */
+    /* COMPONENT-LIFECYCLE */
     AfterContentParentComponent,
     AfterContentComponent,
     ChildComponent,
@@ -95,7 +104,7 @@ import { PopupService } from './services/popup.service';
     PeekABooComponent,
     SpyParentComponent,
     SpyDirective,
-    /* component-interaction */
+    /* COMPONENT-INTERACTION */
     AstronautComponent,
     CountdownTimerComponent,
     CountdownViewChildParentComponent,
@@ -109,27 +118,27 @@ import { PopupService } from './services/popup.service';
     VersionParentComponent,
     VoteTakerComponent,
     VoterComponent,
-    /* component-style */
+    /* COMPONENT-STYLE */
     HeroAppComponent,
     HeroAppMainComponent,
     HeroDetailsComponent,
     HeroControlsComponent,
     QuestSummaryComponent,
     HeroTeamComponent,
-    /* component-directive */
+    /* COMPONENT-DIRECTIVE */
     ItemDetailComponent,
     ItemOutputComponent,
     InputOutputComponent,
     InTheMetadataComponent,
     AliasingComponent,
-    /* content-projection */
+    /* CONTENT-PROJECTION */
     // ZippyComponent,
     // ZippyToggleDirective,
     // ZippyContentDirective,
     ZippyBasicComponent,
     ZippyMultislotComponent,
     ZippyNgprojectasComponent,
-    /* dynamic-component */
+    /* DYNAMIC-COMPONENT */
     HeroJobAdComponent,
     HeroProfileComponent,
     AdBannerComponent,
